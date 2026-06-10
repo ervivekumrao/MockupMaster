@@ -1,0 +1,282 @@
+<!-- Copyright 2025 Vivek Umrao -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockup Master: Dev Tool - Generate Sample Data with Ease</title>
+    <style>
+        :root {
+            --primary: #6200EE;
+            --primary-variant: #3700B3;
+            --secondary: #03DAC6;
+            --background: #f8f9fa;
+            --text: #212529;
+            --white: #ffffff;
+            --accent: #FF0266;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            background: var(--white);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 5rem 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--primary-variant));
+            color: white;
+            border-radius: 0 0 50px 50px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: -4rem;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .feature-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 5rem 0 3rem;
+            font-size: 2.5rem;
+            color: var(--primary-variant);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--secondary);
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+
+        .how-it-works {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .step {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: left;
+            border-left: 5px solid var(--secondary);
+        }
+
+        .step-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .privacy-box {
+            background: #e9ecef;
+            padding: 3rem;
+            border-radius: 20px;
+            margin-top: 4rem;
+            font-size: 0.95rem;
+            color: #495057;
+        }
+
+        .privacy-box h2 {
+            color: var(--primary-variant);
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: #121212;
+            color: #ffffff;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+            color: #ffffff;
+        }
+
+        footer strong {
+            color: var(--secondary);
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--primary-variant);
+            padding: 1.2rem 3rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(3, 218, 198, 0.4);
+        }
+
+        .btn:hover {
+            background: #02b3a3;
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(3, 218, 198, 0.6);
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2.5rem; }
+            nav { gap: 1rem; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#features">Features</a>
+        <a href="#how-to-use">How to Use</a>
+        <a href="#privacy">Privacy Policy</a>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Mockup Master: Dev Tool</h1>
+            <p>The essential companion for Android developers. Populate your emulator or physical device with realistic mock data instantly.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <div id="features" class="features">
+            <div class="feature-card">
+                <h3>Rich Contacts</h3>
+                <p>Inject detailed contact profiles including avatars, multiple phone numbers, and organizations.</p>
+            </div>
+            <div class="feature-card">
+                <h3>SMS Threads</h3>
+                <p>Simulate complex conversations with varying timestamps and message statuses (read/unread).</p>
+            </div>
+            <div class="feature-card">
+                <h3>Call History</h3>
+                <p>Create a robust history of calls with randomized durations to test your call-related logic.</p>
+            </div>
+        </div>
+
+        <h2 id="how-to-use" class="section-title">How to Use Mockup Master</h2>
+
+        <div class="how-it-works">
+            <div class="step">
+                <span class="step-number">01.</span>
+                <h3>Grant Permissions</h3>
+                <p>Open the app and grant the necessary permissions for Contacts, SMS, and Call Logs. This allows the tool to write data to your device's providers.</p>
+            </div>
+            <div class="step">
+                <span class="step-number">02.</span>
+                <h3>Configure Dataset</h3>
+                <p>Use the dashboard to select how many contacts, messages, or call logs you need. You can use our built-in presets for quick setups.</p>
+            </div>
+            <div class="step">
+                <span class="step-number">03.</span>
+                <h3>Generate & Import</h3>
+                <p>Tap the "Generate" button. Watch as the tool populates your device in real-time. Your testing environment is ready in seconds!</p>
+            </div>
+            <div class="step">
+                <span class="step-number">04.</span>
+                <h3>Clean Up</h3>
+                <p>Finished testing? Use the "Clear" button to safely remove only the data generated by Mockup Master, keeping your device tidy.</p>
+            </div>
+        </div>
+
+        <div id="privacy" class="privacy-box">
+            <h2>Privacy Policy Summary</h2>
+            <p><strong>Last Updated: October 6, 2026</strong></p>
+            <p>At Mockup Master: Dev Tool, we prioritize your privacy as a developer. This application is a <strong>local-only utility</strong>.</p>
+            <ul>
+                <li><strong>No Data Collection:</strong> We do not collect or store any of your personal or generated data on our servers.</li>
+                <li><strong>Local Execution:</strong> All data generation and insertion happen entirely on your device.</li>
+                <li><strong>Permissions:</strong> Permissions are requested solely to perform the core function of the app (writing mock data to system providers).</li>
+                <li><strong>No Third Parties:</strong> Your data is never shared with, sold to, or accessible by any third parties.</li>
+            </ul>
+            <p>For the full detailed policy, please <a href="privacy_policy.html" style="color: var(--primary);">click here to read the full document</a>.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Vivek Umrao. All Rights Reserved.</p>
+        <p>Developed by <strong>Vivek Umrao</strong></p>
+        <p>Mockup Master: Dev Tool - Empowering Android Developers Worldwide.</p>
+    </footer>
+
+</body>
+</html>
